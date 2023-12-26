@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/cFxjK4f/3339.jpg",
+        "course_name": "Introduction to Web Development",
+        "credit": 1,
+        "price": 10000,
+        "details": "Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey."
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/rbtds2T/data-Analysis.jpg",
+        "course_name": "Data Science Fundamentals",
+        "credit": 2,
+        "price": 17000,
+        "details": "Explore the world of data science, covering topics such as statistics, machine learning, and data visualization."
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/mTXdQWt/grapics.jpg",
+        "course_name": "Graphic Design Mastery",
+        "credit": 10,
+        "price": 21000,
+        "details": "Unlock your creative potential with in-depth lessons on graphic design principles, tools, and techniques."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/8jyPd8g/mobile-App.jpg",
+        "course_name": "Mobile App Development with Flutter",
+        "credit": 5,
+        "price": 25000,
+        "details": "Build cross-platform mobile apps using Flutter and Dart programming language. No prior experience required."
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/Sv8sN2x/sql.jpg",
+        "course_name": "SQL and Relational Databases for Beginners",
+        "credit": 5,
+        "price": 23000,
+        "details": "Structured Query Language (SQL) is a domain-specific language used for managing and manipulating relational databases."
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/sjxfxqy/python.jpg",
+        "course_name": "Python Programming Essentials",
+        "credit": 4,
+        "price": 16000,
+        "details": "Learn the fundamentals of Python programming, including data structures, algorithms, and application development."
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/D9t7vtY/digital-Market.jpg",
+        "course_name": "Digital Marketing Strategies",
+        "credit": 5,
+        "price": 13000,
+        "details": "Explore the world of digital marketing, covering social media, SEO, email marketing, and online advertising."
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/2tC15fB/photography.jpg",
+        "course_name": "Photography Masterclass",
+        "credit": 2,
+        "price": 14000,
+        "details": "Improve your photography skills with lessons on composition, lighting, and post-processing techniques."
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/cvKFGgD/cybersecurity.jpg",
+        "course_name": "Cybersecurity Fundamentals",
+        "credit": 7,
+        "price": 17000,
+        "details": "Learn the basics of cybersecurity, including network security, encryption, and best practices for online safety."
+    }
+]
