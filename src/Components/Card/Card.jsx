@@ -17,7 +17,7 @@ const Card = ({ course, handleAddCard }) => {
                 <span className='pl-6 pr-2 text-xl'><IoBookOutline></IoBookOutline></span>
                 <h4 className='text-gray-500'>Credit : {credit}hr</h4>
             </div>
-            <button onClick={() => handleAddCard(course_name)} className='text-lg bg-blue-600 hover:bg-blue-800 text-white w-full rounded-md py-1'>Select</button>
+            <button onClick={() => handleAddCard(course_name, credit, price)} className='text-lg bg-blue-600 hover:bg-blue-800 text-white w-full rounded-md py-1'>Select</button>
         </div>
     );
 };

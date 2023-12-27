@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 const Bookmark = ({ card }) => {
     return (
         <div>
-            <ol>
-                <li>
-                    {card}
-                </li>
-            </ol>
+            <li>{card}</li>
         </div>
     );
 };

@@ -6,18 +6,41 @@ import Bookmarks from './Components/Bookmarks/Bookmarks'
 
 function App() {
   const [cards, setCard] = useState([])
+  const [credit, setCredit] = useState(0)
+  const [timeHr, setTime] = useState(20)
+  const [Price, setPrice] = useState(0)
 
-  const handleAddCard = corse => {
-    const newCard = [...cards, corse]
-    setCard(newCard)
+  const handleAddCard = (corse, time, usd) => {
+    //Adding Course Name
+    const checkCard = cards.find(card => card.course_name !== corse)
+    if (checkCard) {
+      const newCard = [...cards, corse]
+      setCard(newCard)
+    }
+
+    //Total Credit and Time Remaining
+    const newCredit = credit + time;
+    const timeRemaining = 20 - newCredit;
+    if (newCredit <= 20) {
+      setCredit(newCredit)
+      setTime(timeRemaining)
+    }
+
+    //Adding Total Price
+    const newPrice = Price + usd;
+    setPrice(newPrice)
   }
+
+  // const handleAddCredit = time => {
+  //   console.log("add credit", time);
+  // }
 
   return (
     <>
       <Header></Header>
       <div className='flex bg-[#F3F3F3]'>
         <Blogs handleAddCard={handleAddCard}></Blogs>
-        <Bookmarks cards={cards}></Bookmarks>
+        <Bookmarks cards={cards} credit={credit} timeHr={timeHr} Price={Price}></Bookmarks>
       </div>
     </>
   )
