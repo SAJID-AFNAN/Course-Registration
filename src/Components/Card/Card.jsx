@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { FiDollarSign } from "react-icons/fi";
 import { IoBookOutline } from "react-icons/io5";
+import { ToastContainer } from 'react-toastify';
 
 const Card = ({ course, handleAddCard }) => {
     const { course_name, img, details, price, credit } = course;
@@ -18,6 +19,7 @@ const Card = ({ course, handleAddCard }) => {
                 <h4 className='text-gray-500'>Credit : {credit}hr</h4>
             </div>
             <button onClick={() => handleAddCard(course_name, credit, price)} className='text-lg bg-blue-600 hover:bg-blue-800 text-white w-full rounded-md py-1'>Select</button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

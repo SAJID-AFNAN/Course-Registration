@@ -3,6 +3,8 @@ import './App.css'
 import Blogs from './Components/Blogs/Blogs'
 import Header from './Components/Header/Header'
 import Bookmarks from './Components/Bookmarks/Bookmarks'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [cards, setCard] = useState([])
@@ -14,19 +16,25 @@ function App() {
     //Adding Course Name
     const checkCard = cards.find(card => card === corse)
     if (!checkCard) {
-      const newCard = [...cards, corse]
-      setCard(newCard)
+      if (time <= timeHr) {
+        const newCard = [...cards, corse]
+        setCard(newCard)
+      }
+    }
+    else {
+      toast.warning("Already Selected this Course")
     }
 
     //Total Credit and Time Remaining
     const newCredit = credit + time;
     const timeRemaining = 20 - newCredit;
     const checkTime = cards.find(card => card === corse)
-    if (!checkTime) {
-      if (newCredit <= 20) {
-        setCredit(newCredit)
-        setTime(timeRemaining)
-      }
+    if (!checkTime && newCredit <= 20) {
+      setCredit(newCredit)
+      setTime(timeRemaining)
+    }
+    else if (time >= timeHr) {
+      toast.warning("You don't have enough credit")
     }
 
     //Adding Total Price
