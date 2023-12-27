@@ -1,15 +1,19 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-const Bookmark = () => {
+const Bookmark = ({ card }) => {
     return (
-        <div className="w-1/4">
-            
+        <div>
+            <ol>
+                <li>
+                    {card}
+                </li>
+            </ol>
         </div>
     );
 };
 
 Bookmark.propTypes = {
-    
+    card: PropTypes.array
 };
 
 export default Bookmark;
