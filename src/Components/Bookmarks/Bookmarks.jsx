@@ -3,7 +3,7 @@ import Bookmark from '../Bookmark/Bookmark';
 
 const Bookmarks = ({ cards, credit, timeHr, Price }) => {
     return (
-        <div className="w-1/4 mx-4 bg-white rounded-xl p-6 ">
+        <div className="lg:w-1/4 lg:mx-4 bg-white rounded-xl p-6 mb-4 lg:mb-0">
             <h2 className="text-lg text-[#2F80ED] border-b-2 font-bold pb-4">Credit Hour Remaining {timeHr} hr</h2>
             <h1 className="text-xl font-bold pt-4">Course Name</h1>
             <div>

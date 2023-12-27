@@ -12,7 +12,7 @@ const Blogs = ({ handleAddCard }) => {
             .then(data => setCourses(data))
     }, [])
     return (
-        <div className="w-3/4 grid grid-cols-3 gap-6 ml-8">
+        <div className="lg:w-3/4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-6 lg:ml-8">
             {
                 courses.map(course => <Card
                     key={course.id}

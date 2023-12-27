@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Bookmark = ({ card }) => {
     return (
         <div>
-            <li>{card}</li>
+            <li className='text-gray-500'>{card}</li>
         </div>
     );
 };

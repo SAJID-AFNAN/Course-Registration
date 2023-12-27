@@ -5,7 +5,7 @@ import { IoBookOutline } from "react-icons/io5";
 const Card = ({ course, handleAddCard }) => {
     const { course_name, img, details, price, credit } = course;
     return (
-        <div className='bg-white rounded-xl space-y-3 p-4'>
+        <div className='bg-white rounded-xl space-y-3 p-4 mb-3 lg:mb-0'>
             <img className="h-40 mx-auto w-full rounded-xl" src={img} alt="" />
             <h2 className="text-lg font-semibold">{course_name}</h2>
             <ol>
