@@ -12,8 +12,9 @@ function App() {
 
   const handleAddCard = (corse, time, usd) => {
     //Adding Course Name
-    const checkCard = cards.find(card => card.course_name !== corse)
-    if (checkCard) {
+    const checkCard = cards.find(card => card === corse)
+    // console.log((cards));
+    if (!checkCard) {
       const newCard = [...cards, corse]
       setCard(newCard)
     }
@@ -30,10 +31,6 @@ function App() {
     const newPrice = Price + usd;
     setPrice(newPrice)
   }
-
-  // const handleAddCredit = time => {
-  //   console.log("add credit", time);
-  // }
 
   return (
     <>
